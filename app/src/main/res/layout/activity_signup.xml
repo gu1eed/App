@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vaibhav.upworkfirstproject.Register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+        <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:background="@mipmap/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/imagebutton_profile"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo" />
+
+        <!-- name-->
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagebutton_profile"
+        android:id="@+id/textlayout_name">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="@dimen/textsize"
+            android:id="@+id/input_name"
+            android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- student id-->
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textlayout_studentid"
+        android:layout_below="@id/textlayout_name">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentid"
+            android:id="@+id/input_studentid"
+            android:inputType="number"/>
+         </android.support.design.widget.TextInputLayout>
+    <!-- Gender-->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup1_gender"
+        android:layout_below="@+id/textlayout_studentid">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/f"
+            android:textSize="@dimen/textsize"
+            android:id="@+id/radio_female"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/M"
+            android:textSize="@dimen/textsize"
+            android:id="@+id/radio_male"/>
+    </RadioGroup>
+
+    <!-- profeesion-->
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/stu"
+            android:textOff="@string/tut"
+            android:textStyle="bold"
+
+            android:showText="true"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_below="@+id/textlayout_studentid"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/switch_pro"/>
+
+        <!-- Email-->
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup1_gender"
+        android:id="@+id/textlayout_email">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Password -->
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout_email"
+        android:id="@+id/textlayout_password">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/input_password"
+            android:hint="@string/password"/>
+         </android.support.design.widget.TextInputLayout>
+
+        <!--Repeat Password -->
+        <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout_password"
+        android:id="@+id/textlayout_repassword">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/input_repass"
+            android:hint="@string/repeatpass"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textlayout_repassword"
+        android:background="@color/colorPrimary"
+        android:text="@string/register"
+            android:onClick="SubmitData"
+            android:id="@+id/button_submit"
+        android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+</ScrollView>

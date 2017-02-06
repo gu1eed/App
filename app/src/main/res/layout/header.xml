@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/bavck"/>
+
+    <TextView
+        android:text="Category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textView_headerca"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

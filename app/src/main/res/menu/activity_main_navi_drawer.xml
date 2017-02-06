@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="@string/cs"
+            android:id="@+id/menu_cs"></item>
+        <item android:title="@string/bui"
+            android:id="@+id/menu_bui"/>
+        <item android:title="@string/law"
+            android:id="@+id/menu_law"/>
+        <item android:title="@string/health"
+            android:id="@+id/menu_health"/>
+        <item android:title="@string/art"
+            android:id="@+id/menu_art"/>
+        <item android:title="@string/phy"
+            android:id="@+id/menu_phy"/>
+        <item android:title="@string/media"
+            android:id="@+id/menu_media"/>
+
+
+
+</menu>

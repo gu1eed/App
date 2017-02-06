@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vaibhav.upworkfirstproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Noappbar">
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="com.example.vaibhav.upworkfirstproject.Register"
+                android:value="@string/Register" />
+        </activity>
+        <activity
+            android:name=".ForgetPass"
+            android:parentActivityName=".Login"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="com.example.vaibhav.upworkfirstproject.ForgetPass"
+                android:value="@string/Forgot" />
+        </activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainNavi"
+            android:label="@string/title_activity_main_navi" />
+
+        <activity android:name=".Related_to_card_data.TutorDetail"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Fragment.Navigation.TeacherData"/>
+        <activity
+            android:name=".Login"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Fragment.Navigation.TeacherData"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Fragment.BottomNavigation.MessageWindow"
+            android:theme="@style/AppTheme"
+            ></activity>
+    </application>
+
+</manifest>
